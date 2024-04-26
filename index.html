@@ -22,27 +22,52 @@
     <link rel="icon" type="image/jpg" href="/images/yo.jpg" />
 
     <style>
-      h1{
-        /*color: blue; /* declaracion */
-        /*color: rgba(0, 0, 0, 50%); /* declaracion */
-        /*color: rgb(0 0 0 / 50%); /* declaracion */
-        /*color: hsl(60, 100%, 100%); /* declaracion */
-        color: oklch(348, 83%, 44%); /* declaracion */
+      /*
+        Elementos que la componen
+        selector {
+          propiedad: valor;  // declaracion
+        }
+      */
+
+      /*Utilizando el selector de etiqueta*/
+      h1 {
+        /*color: blue; /* palabra clave */
+        /*color: rgba(0, 0, 0, 50%); /* un poco obsoleto */
+        /*color: rgb(0 0 0 / 50%); /* moderno, mas utilizado */
+        /*color: hsl(60, 100%, 100%); /* poco utilizado */
+        /*color: oklch(348, 83%, 44%); /* poco utilizado */
+        color: #09f;
+        
       }
-      
-      body{
-        background: #e9e9f2;
+
+      body {
+        background: #dbfbff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif; 
+      }
+
+      .link {
+        color: red;
+      }
+
+      .link:hover{
+        outline: 5px solid red;
+        
       }
     </style>
-
   </head>
   <body>
     <header>
-      <h1>Porttafolio de Francisco Javier</h1>
+      <h1>Portafolio de Francisco Javier</h1>
       <nav>
-        <a href="#experiencias">Experiencias</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="https://www.twitch.tv" target="_blank" rel="noreferrer"
+        <a class="link" href="#experiencias">Experiencias</a>
+        <a class="link" href="#proyectos">Proyectos</a>
+        <a
+          class="link"
+          href="https://www.twitch.tv"
+          target="_blank"
+          rel="noreferrer"
           >Twitch</a
         >
       </nav>
